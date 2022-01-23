@@ -4,6 +4,11 @@
     hosts: all
     become: false
     gather_facts: false
+    vars_files:
+      
+      -
+        vault-pass.yml
+  
     tasks:
       - 
         name: reboot host
